@@ -1,10 +1,10 @@
 on:
-  push: 
-    tags:
-      - '*'
-    branches: 
+  push:
+    branches:
       - main
-      
+    tags-ignore:
+      - main
+
 name: Create Release
 
 jobs:
