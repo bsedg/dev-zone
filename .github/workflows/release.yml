@@ -1,12 +1,10 @@
-name: Release
-
 on:
   push: 
-    branches:
+    tags:
+      - '*'
+    branches: 
       - main
-      tags:
-        - '*'
-
+      
 name: Create Release
 
 jobs:
